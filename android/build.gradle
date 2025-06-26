@@ -1,0 +1,45 @@
+group 'com.devscribed.flutter_social_share'
+version '1.0'
+
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+    }
+
+    dependencies {
+        classpath 'com.android.tools.build:gradle:7.1.2'
+    }
+}
+
+rootProject.allprojects {
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+
+apply plugin: 'com.android.library'
+
+android {
+
+    if (project.android.hasProperty("namespace")) {
+        namespace 'com.devscribed.flutter_social_share'
+    }
+
+    compileSdkVersion 34
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    defaultConfig {
+        minSdkVersion 21
+        targetSdkVersion 34
+    }
+}
+
+dependencies {
+    implementation 'com.facebook.android:facebook-share:18.0.0'
+}
