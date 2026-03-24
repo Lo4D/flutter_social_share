@@ -285,7 +285,7 @@ public class ShareUtil{
         content.photos = photos
         content.hashtag = Hashtag(message!)
         let dialog = ShareDialog(
-            viewController: UIApplication.shared.windows.first!.rootViewController,
+            viewController: UIApplication.topViewController(),
             content: content,
             delegate: delegate
         )
