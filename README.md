@@ -152,7 +152,7 @@ After created your own file provider and define your own path paste them into th
 
 ## iOS
 
-***Open Xcode and change your deployment target to iOS 11***
+***Open Xcode and change your deployment target to iOS 13 or higher***
 
 Add these lines to your Info.plist file
 
